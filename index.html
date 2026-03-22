@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="entry">
+        <div class="logo"></div>
+        <div class="date-time">
+            <p class="date"></p>
+            <p class="time"></p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="location">
+        <div class="text-location">
+            <div class="curr-loc">
+                <p class="loc-heading">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    Location:
+                </p>
+                <p class="name-detail"></p>
+                <p class="city-info"></p>
+            </div>
+            <div class="user-input">
+                <div class="select-country">
+                    <p>Select Country: </p>
+                    <select class="country"></select>
+                </div>
+                <div class="enter-city">
+                    <p>Enter city: </p>
+                    <input class="City" />
+                </div>
+                <button class="submit">Submit</button>
+                <div class="or">
+                    <p>OR</p>
+                    <button class="Set-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Current Location
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="map">
+            <p>
+                <i class="fa-solid fa-map-location"></i>
+                Map
+            </p>
+            <iframe class="myFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=28.6517178,77.2219386&z=12&output=embed">
+            </iframe>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="temp-info">
+        <div class="temp-combine">
+        <div class="temprature">
+        </div>
+        <div class="feels-like">
+        </div>
+        </div>
+        <div class="cloud">
+     
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="other-info">
+        <div class="info">
+            <p class="Humidity">
+                <i class="fa-solid fa-droplet"></i>
+            </p>
+            <p class="wind">
+                <i class="fa-solid fa-wind"></i>
+            </p>
+            <p class="Visibility">
+                <i class="fa-solid fa-eye"></i>
+            </p>
+        </div>
+        <div class="info">
+            <p class="cloudiness">
+                <i class="fa-regular fa-cloud"></i>
+                
+            </p>
+            <p class="dir">
+                <i class="fa-regular fa-compass"></i>
+                
+            </p>
+            <p class="pressure">
+                <i class="fa-solid fa-thermometer"></i>
+            </p>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="sun-info">
+        <img class="sunrise" src="sunrise(1).png"/>
+        <p>Sunrise: 05:31 AM</p>
+        <img class="sunset" src="sunset(1).png"/>
+        <p>Sunset: 07:37 PM</p>
+    </div>
+    <div class="line"></div>
+    <section class="forecast-section">
+        <div class="forecast-title">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>5 Day Forecast</p>
+        </div>
+        <div class="forecast-grid"></div>
+    </section>
+    <script src="config.js"></script>
+    <script src="countryList.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
